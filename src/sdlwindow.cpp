@@ -158,7 +158,7 @@ void inputSDLThreadRun( void )
 			case SDL_KEYUP:
 				key = SDLScancodeToLinuxKey( event.key.keysym.scancode );
 
-				if ( event.type == SDL_KEYUP && ( event.key.keysym.mod & KMOD_LGUI ) )
+				if ( event.type == SDL_KEYUP && ( event.key.keysym.mod & KMOD_RCTRL ) )
 				{
 					bool handled = true;
 					switch ( key )
